@@ -5,6 +5,12 @@
 Pagilla is a library for building web applications with components.
 It contains many predefined components, but you can also create your custom components.
 
+# Installation
+
+```shell
+composer install rwionczek/pagilla
+```
+
 # Usage
 
 This Pagilla code:
@@ -49,7 +55,7 @@ class HomePage extends Component
     }
 }
 ```
-compiles to:
+renders:
 ```html
 <!doctype html>
 <html lang="pl">
@@ -81,7 +87,7 @@ compiles to:
 </html>
 ```
 
-All you need to do is to run you app:
+All you need to do is to run you app in your `index.php` file:
 ```injectablephp
 <?php
 
