@@ -1,0 +1,19 @@
+{
+    "name": "rwionczek/pagilla",
+    "description": "PHP library for building web applications, inspired by React and Flutter",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rwionczek\\Pagilla\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Radosław Wionczek",
+            "email": "rwionczek@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
