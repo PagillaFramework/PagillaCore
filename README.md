@@ -1,3 +1,5 @@
+![CI build](https://github.com/rwionczek/Pagilla/actions/workflows/php.yml/badge.svg)
+
 # About
 
 Pagilla is a library for building web applications with components.
