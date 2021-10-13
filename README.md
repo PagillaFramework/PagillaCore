@@ -16,7 +16,7 @@ use Rwionczek\Pagilla\Component\WebApp;
 
 class HomePage extends Component
 {
-    public function render(): Component
+    public function build(): Component
     {
         return new WebApp(
             title: 'My new Pagilla web app',
