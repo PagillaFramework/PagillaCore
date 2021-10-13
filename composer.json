@@ -1,6 +1,6 @@
 {
     "name": "rwionczek/pagilla",
-    "description": "PHP library for building web applications, inspired by React and Flutter",
+    "description": "PHP library for building web applications, inspired by React and Flutter.",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -15,5 +15,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "10.0.x-dev"
+    }
 }
