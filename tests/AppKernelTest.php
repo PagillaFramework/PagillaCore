@@ -14,7 +14,14 @@ class AppKernelTest extends TestCase
         $this->appKernel = new AppKernel();
     }
 
-    public function test__runApp__should_render_simple_component(): void
+    public function test__runApp__should_render_single_component(): void
+    {
+        $this->expectOutputString('<div>Hello World</div>');
+
+        $this->appKernel->runApp(new Text('Hello World'),);
+    }
+
+    public function test__runApp__should_render_nested_components(): void
     {
         $this->expectOutputString('<div><div>Hello World</div></div>');
 
