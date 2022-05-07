@@ -1,4 +1,4 @@
-![CI build](https://github.com/rwionczek/Pagilla/actions/workflows/php.yml/badge.svg)
+![CI build](https://github.com/PagillaFramework/PagillaCore/actions/workflows/php.yml/badge.svg)
 
 # About
 
