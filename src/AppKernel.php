@@ -1,6 +1,7 @@
 <?php
+declare(strict_types=1);
 
-namespace Rwionczek\Pagilla;
+namespace PagillaFramework\PagillaCore;
 
 final class AppKernel
 {

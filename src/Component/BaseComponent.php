@@ -1,11 +1,12 @@
 <?php
+declare(strict_types=1);
 
-namespace Rwionczek\Pagilla\Component;
+namespace PagillaFramework\PagillaCore\Component;
 
 use RuntimeException;
-use Rwionczek\Pagilla\Component;
+use PagillaFramework\PagillaCore\Component;
 
-class Raw extends Component
+class BaseComponent extends Component
 {
     public function __construct(
         private string $tagName,
@@ -22,12 +23,19 @@ class Raw extends Component
     {
         $renderedChildren = implode('', $this->children);
 
+        $renderedAttributes = $this->getRenderedAttributes();
+
+        return "<$this->tagName$renderedAttributes>$renderedChildren</$this->tagName>";
+    }
+
+    private function getRenderedAttributes(): string
+    {
         $renderedAttributes = '';
 
         foreach ($this->attributes as $attributeName => $attributeValue) {
             $renderedAttributes .= " $attributeName=\"$attributeValue\"";
         }
 
-        return "<$this->tagName$renderedAttributes>$renderedChildren</$this->tagName>";
+        return $renderedAttributes;
     }
 }

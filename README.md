@@ -2,7 +2,7 @@
 
 # About
 
-Pagilla is a library for building web applications with components.
+PagillaCore is a library for building web applications with components.
 It contains many predefined components, but you can also create your custom components.
 
 # Installation

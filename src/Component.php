@@ -1,6 +1,7 @@
 <?php
+declare(strict_types=1);
 
-namespace Rwionczek\Pagilla;
+namespace PagillaFramework\PagillaCore;
 
 abstract class Component
 {
@@ -8,6 +9,6 @@ abstract class Component
 
     public function __toString(): string
     {
-        return $this->build();
+        return (string)$this->build();
     }
 }

@@ -5,7 +5,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Rwionczek\\Pagilla\\": "src/"
+            "PagillaFramework\\PagillaCore\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PagillaFramework\\PagillaCore\\Tests\\": "tests/"
         }
     },
     "authors": [
