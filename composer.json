@@ -1,5 +1,5 @@
 {
-    "name": "pagilla/core",
+    "name": "pagilla-framework/core",
     "description": "PHP library for building web applications, inspired by React and Flutter.",
     "type": "library",
     "license": "MIT",
