@@ -2,13 +2,12 @@
 
 # About
 
-PagillaCore is a library for building web applications with components.
-It contains many predefined components, but you can also create your custom components.
+Pagilla is a PHP component engine inspired by Flutter. Create your presentation layer in pure PHP.
 
 # Installation
 
 ```shell
-composer install rwionczek/pagilla
+composer install pagilla/core
 ```
 
 # Usage
@@ -19,8 +18,8 @@ This Pagilla code:
 
 namespace MyApp\Page;
 
-use Rwionczek\Pagilla\Component;
-use Rwionczek\Pagilla\Component\WebApp;
+use Pagilla\Core\Component;
+use Pagilla\Component\WebApp;
 
 class HomePage extends Component
 {

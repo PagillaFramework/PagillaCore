@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace PagillaFramework\PagillaCore\Tests\Component;
+namespace Pagilla\Core\Tests\Component;
 
-use PagillaFramework\PagillaCore\AppKernel;
-use PagillaFramework\PagillaCore\Component\BaseComponent;
+use Pagilla\Core\AppKernel;
+use Pagilla\Core\Component\BaseComponent;
 use PHPUnit\Framework\TestCase;
 
 class BaseComponentTest extends TestCase

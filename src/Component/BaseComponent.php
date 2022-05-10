@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace PagillaFramework\PagillaCore\Component;
+namespace Pagilla\Core\Component;
 
 use RuntimeException;
-use PagillaFramework\PagillaCore\Component;
+use Pagilla\Core\Component;
 
-class BaseComponent extends Component
+final class BaseComponent extends Component
 {
     public function __construct(
         private string $tagName,
