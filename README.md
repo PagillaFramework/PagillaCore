@@ -13,17 +13,18 @@ composer install pagilla/core
 # Usage
 
 This Pagilla code:
+
 ```injectablephp
 <?php
 
 namespace MyApp\Page;
 
-use Pagilla\Core\Component;
+use Pagilla\Core\Component\RenderedComponent;
 use Pagilla\Component\WebApp;
 
-class HomePage extends Component
+class HomePage extends RenderedComponent
 {
-    public function build(): Component
+    public function build(): RenderedComponent
     {
         return new WebApp(
             title: 'My new Pagilla web app',
