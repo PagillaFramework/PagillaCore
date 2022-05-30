@@ -10,7 +10,7 @@ class HtmlElementNode implements HtmlNode
     /**
      * @param string $name
      * @param HtmlAttribute[] $attributes
-     * @param HtmlElementNode[]|string[] $children
+     * @param HtmlNode[] $children
      * @param bool $closed
      */
     public function __construct(

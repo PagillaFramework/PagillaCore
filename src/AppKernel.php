@@ -7,8 +7,10 @@ use Pagilla\Core\Component\Component;
 
 final class AppKernel
 {
+    private const DOCTYPE_DECLARATION = '<!doctype html>';
+
     public function runApp(Component $component): void
     {
-        echo $component->render();
+        echo self::DOCTYPE_DECLARATION . $component->render();
     }
 }

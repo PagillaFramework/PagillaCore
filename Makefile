@@ -1,5 +1,5 @@
 shell:
 	docker-compose run app bash
 
-tests:
+phpunit:
 	docker-compose run app ./vendor/bin/phpunit tests
