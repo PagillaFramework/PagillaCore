@@ -45,8 +45,19 @@ class HtmlElementNode implements HtmlNode
 
     private function convertAttributeToString(HtmlAttribute $attribute): string
     {
-        $name = XssProtector::filterString($attribute->getName());
-        $value = XssProtector::filterString($attribute->getValue());
+        $name = XssProtector::filterString($attribute->name);
+
+        $value = $attribute->value;
+
+        if (!$value) {
+            return '';
+        }
+
+        if ($value === true) {
+            return " $name";
+        }
+
+        $value = XssProtector::filterString($value);
 
         return " $name=\"$value\"";
     }

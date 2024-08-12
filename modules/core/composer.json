@@ -1,6 +1,6 @@
 {
     "name": "pagilla/core",
-    "description": "PHP library for building web applications, inspired by React and Flutter.",
+    "description": "PHP template engine, inspired by React and Flutter.",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -23,6 +23,6 @@
         "phpunit/phpunit": "^9.5"
     },
     "require": {
-        "php": "^8.0"
+        "php": "^8.1"
     }
 }

@@ -8,7 +8,7 @@ use Pagilla\Core\Html\HtmlElementNode;
 use Pagilla\Core\Html\HtmlTextNode;
 use PHPUnit\Framework\TestCase;
 
-class HtmlElementTest extends TestCase
+class HtmlElementNodeTest extends TestCase
 {
 
     public function test__should_return_correct_value_when_casted_to_string_with_xss_protection(): void
@@ -20,6 +20,7 @@ class HtmlElementTest extends TestCase
                     '&lt;script&gt;alert(&quot;XSS!!!&quot;);&lt;/script&gt;' .
                 '</span>' .
                 '<img src="https://example.com/image.png">' .
+                '<input type="text" disabled>' .
             '</div>',
             (string)new HtmlElementNode(
                 'div',
@@ -44,7 +45,15 @@ class HtmlElementTest extends TestCase
                             new HtmlAttribute('src', 'https://example.com/image.png'),
                         ],
                         closed: false,
-                    )
+                    ),
+                    new HtmlElementNode(
+                        'input',
+                        [
+                            new HtmlAttribute('type', 'text'),
+                            new HtmlAttribute('disabled', true),
+                        ],
+                        closed: false,
+                    ),
                 ],
             ),
         );
